@@ -18,7 +18,11 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".view.activity.LineGraphicActivity"
+            android:name=".view.activity.BaseBezierActivity"
+            android:theme="@style/ParallaxAppTheme" />
+        <activity
+            android:name=".view.activity.MainActivity"
+            android:windowSoftInputMode="adjustPan"
             android:theme="@style/ParallaxAppTheme" />
 
     </application>
