@@ -10,7 +10,8 @@ import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
 
-import com.an.base.utils.ytips.SizeUtil;
+import com.an.base.utils.ytips.SizeUtils;
+
 
 /**
  * Created by qydda on 2017/4/10.
@@ -104,11 +105,11 @@ public class SampleView extends View {
         canvas.drawLine(end.x, end.y, control.x, control.y, mPaint);
 
         for (int i = 0; i < mWidth; i = i + 50) {
-            canvas.drawLine(0, SizeUtil.dp2Px(mContext, i), mWidth, SizeUtil.dp2Px(mContext, i), mPaint);//x
+            canvas.drawLine(0, SizeUtils.dp2Px(mContext, i), mWidth, SizeUtils.dp2Px(mContext, i), mPaint);//x
         }
 
         for (int i = 0; i < mWidth; i = i + 20) {
-            canvas.drawLine(SizeUtil.dp2Px(mContext, i), 0, SizeUtil.dp2Px(mContext, i), mHeight, mPaint);//y
+            canvas.drawLine(SizeUtils.dp2Px(mContext, i), 0, SizeUtils.dp2Px(mContext, i), mHeight, mPaint);//y
         }
         // 绘制贝塞尔曲线
         mPaint.setColor(Color.RED);

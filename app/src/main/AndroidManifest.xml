@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.an.test">
+    <!-- tools:replace="android:name"-->
 
     <application
         android:allowBackup="true"
@@ -10,7 +12,7 @@
         android:theme="@style/AnAppTheme">
         <activity
             android:name=".MainActivity"
-            android:theme="@style/ParallaxAppTheme">
+            android:theme="@style/NoBarTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -21,9 +23,9 @@
             android:name=".view.activity.BaseBezierActivity"
             android:theme="@style/ParallaxAppTheme" />
         <activity
-            android:name=".view.activity.MainActivity"
-            android:windowSoftInputMode="adjustPan"
-            android:theme="@style/ParallaxAppTheme" />
+            android:name=".view.activity.MyBazierActivity"
+            android:theme="@style/ParallaxAppTheme"
+            android:windowSoftInputMode="adjustPan" />
 
     </application>
 

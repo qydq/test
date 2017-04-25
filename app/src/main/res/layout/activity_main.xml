@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.an.base.view.widget.WIoScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<com.an.base.view.widget.YshrinkScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
@@ -40,7 +40,20 @@
             android:gravity="center"
             android:text="动画贝塞尔曲线"
             android:textColor="@color/CommColorWhite" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/CommDimenMargin" />
+
+        <TextView
+            android:id="@+id/tvBeiPic"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/yy_drawable_selector_md_oppose"
+            android:gravity="center"
+            android:text="测试an图片"
+            android:textColor="@color/CommColorWhite" />
     </LinearLayout>
 
 
-</com.an.base.view.widget.WIoScrollView>
+</com.an.base.view.widget.YshrinkScrollView>

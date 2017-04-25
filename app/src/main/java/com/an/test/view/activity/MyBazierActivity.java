@@ -13,14 +13,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class MainActivity extends AppCompatActivity {
+public class MyBazierActivity extends AppCompatActivity {
     private BezierView mBezierView;
     private EditText mEditText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.sst_activity_main);
+        setContentView(R.layout.sst_activity_mybazier);
         mBezierView = (BezierView) findViewById(R.id.bezier);
         mEditText = (EditText) findViewById(R.id.editText);
         List<Point> pointList = new ArrayList<>();

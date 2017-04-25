@@ -7,8 +7,8 @@ import android.os.Message;
 import android.util.Log;
 import android.widget.LinearLayout;
 
-import com.an.base.utils.DUtilsBitmap;
-import com.an.base.utils.ytips.FastBlurUtil;
+import com.an.base.utils.YbitmapUtils;
+import com.an.base.utils.ytips.FastBlurUtils;
 import com.an.base.view.ParallaxActivity;
 import com.an.test.R;
 import com.an.test.view.BezierBase;
@@ -33,12 +33,12 @@ public class BaseBezierActivity extends ParallaxActivity {
 
     @Override
     public void initView() {
-        setContentView(R.layout.sst_activity_linegraphic);
-        Bitmap oBitmap = DUtilsBitmap.INSTANCE.ReadBitmapById(mContext, R.drawable.yy_drawable_bg_yezi);
-        Bitmap sBitmap = DUtilsBitmap.INSTANCE.zoomBitmap(oBitmap, 20);
-        Bitmap bitmap = FastBlurUtil.doBlur(sBitmap, 9, false);
+        setContentView(R.layout.sst_activity_basebezier);
+        Bitmap oBitmap = YbitmapUtils.INSTANCE.ReadBitmapById(mContext, R.drawable.yy_drawable_bg_yezi);
+        Bitmap sBitmap = YbitmapUtils.INSTANCE.zoomBitmap(oBitmap, 20);
+        Bitmap bitmap = FastBlurUtils.doBlur(sBitmap, 9, false);
         scrollView = (LinearLayout) findViewById(R.id.activity_main);
-        scrollView.setBackground(DUtilsBitmap.INSTANCE.bitmapToDrawable(bitmap));
+        scrollView.setBackground(YbitmapUtils.INSTANCE.bitmapToDrawable(bitmap));
 
         bezier = (BezierBase) findViewById(R.id.bezier);
 //        lineGraphicView = (LineGraphicView) findViewById(R.id.linegraphicView);

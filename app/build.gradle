@@ -21,8 +21,7 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
-        exclude group: 'com.android.support', module: 'support-annotations'
-    })
-    compile 'com.github.qydq:an-aw-base:0.2.7'
+    compile 'com.github.qydq:an-aw-base:0.3.3'
+//    compile 'cn.android.sunst:an-base:2.1'
+//    compile 'com.jph.takephoto:takephoto_library:4.0.3'
 }
