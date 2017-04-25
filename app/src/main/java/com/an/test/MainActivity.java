@@ -53,14 +53,17 @@ public class MainActivity extends ParallaxActivity implements View.OnClickListen
                 break;
             case R.id.tvBeiPic:
                 Intent intent = new Intent(mContext, AnPicDetailsActivity.class);
-                ArrayList<String> mDatas = new ArrayList<>();
-                mDatas.add("https://www.pic.bul.com/adsfasdf.jpg");
-                intent.putStringArrayListExtra("images", mDatas);
-                intent.putExtra("position", 1);
+//                ArrayList<String> mDatas = new ArrayList<>();
+//                mDatas.add("https://www.pic.bul.com/adsfasdf.jpg");
+//                intent.putStringArrayListExtra("images", mDatas);
+                intent.putExtra("position", 0);
                 intent.putExtra("locationX", 100);
-                intent.putExtra("locationY", 100);
-                intent.putExtra("width", 250);
-                intent.putExtra("height", 250);
+                intent.putExtra("locationY", 16);
+//                intent.putExtra("width", 400);
+//                intent.putExtra("height", 300);
+                intent.putExtra("isZoom", false);
+//                intent.putExtra("drawableId", R.drawable.yy_drawable_bg_yezi);
+                intent.putExtra("absPath", "sdcard/an_ytips/picture/shiluohua.jpg");
                 startActivity(intent);
                 break;
             default:
